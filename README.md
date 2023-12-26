@@ -1,0 +1,1 @@
+An Android social media app developed in Android Studio using Java, Firebase Storage, and Firebase Realtime Database features Login, Profile Creation, MBTI Test, Swipe Right & Left, and Chat capabilities.
