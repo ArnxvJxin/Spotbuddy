@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/welcome_img_blogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="50dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/logo_blue"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/welcome_txt_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/proxima_nova"
+        android:text="Welcome to Spotbuddy."
+        android:textAlignment="center"
+        android:textColor="@color/blue_theme"
+        android:textColorHighlight="@color/blue_theme"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/welcome_txt_rules"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/proxima_nova"
+        android:text="Please follow these Rules."
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textColorHighlight="@color/grey"
+        android:textSize="18sp"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/welcome_txt_yourself"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:drawableStart="@drawable/baseline_tick_24"
+        android:fontFamily="@font/proxima_nova"
+        android:text="   Be yourself."
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/welcome_txt_make"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/proxima_nova"
+        android:text="Make sure your photos, age, bio are true to who you are."
+        android:textAlignment="textStart"
+        android:textColor="@color/grey"
+        android:textColorHighlight="@color/grey"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/welcome_txt_safe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:drawableStart="@drawable/baseline_tick_24"
+        android:fontFamily="@font/proxima_nova"
+        android:text="   Stay safe."
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/welcome_txt_dont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/proxima_nova"
+        android:text="Don't be too quick to give out personal information."
+        android:textAlignment="textStart"
+        android:textColor="@color/grey"
+        android:textColorHighlight="@color/grey"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/welcome_txt_cool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:drawableStart="@drawable/baseline_tick_24"
+        android:fontFamily="@font/proxima_nova"
+        android:text="   Play it cool."
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/welcome_txt_respect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/proxima_nova"
+        android:text="Respect others and treat then as you would like to be treated."
+        android:textAlignment="textStart"
+        android:textColor="@color/grey"
+        android:textColorHighlight="@color/grey"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/welcome_txt_proactive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:drawableStart="@drawable/baseline_tick_24"
+        android:fontFamily="@font/proxima_nova"
+        android:text="   Be proactive."
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/welcome_txt_always"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/proxima_nova"
+        android:text="Always report bad behavior."
+        android:textAlignment="textStart"
+        android:textColor="@color/grey"
+        android:textColorHighlight="@color/grey"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/welcome_btn_agree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/circular_button"
+        android:fontFamily="@font/nunito_bold"
+        android:gravity="center"
+        android:text="I agree"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/blue_theme"
+        tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+
+</LinearLayout>

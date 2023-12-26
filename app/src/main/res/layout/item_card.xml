@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/card_img_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="600dp"
+                        android:layout_gravity="top"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="750dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img"
+                        tools:ignore="ContentDescription,MissingConstraints" />
+
+                    <ImageView
+                        android:id="@+id/card_img_shadowdown"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_gravity="top"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/shadow"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/card_img_shadowup"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_gravity="top"
+                        android:adjustViewBounds="true"
+                        android:rotation="180"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/shadow"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/card_img_thumbup"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/baseline_thumb_up_24"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="@+id/card_img_one"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/card_img_one"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:id="@+id/card_img_thumbdown"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/baseline_thumb_down_24"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/card_img_one"
+                        app:layout_constraintStart_toStartOf="@+id/card_img_one"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints">
+
+                        <TextView
+                            android:id="@+id/card_txt_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="5dp"
+                            android:drawableStart="@drawable/baseline_location_on_24"
+                            android:drawablePadding="5dp"
+                            android:elevation="10dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:maxWidth="400dp"
+                            android:text="City, State"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            tools:ignore="TextContrastCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        tools:ignore="MissingConstraints">
+
+                        <TextView
+                            android:id="@+id/card_txt_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="10dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Name, 00"
+                            android:textColor="@color/white"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/card_txt_profession"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/baseline_work_24"
+                            android:drawablePadding="5dp"
+                            android:elevation="10dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Profession"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/card_txt_college"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/baseline_school_24"
+                            android:drawablePadding="5dp"
+                            android:elevation="10dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="College"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/card_txt_school"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/baseline_school_24"
+                            android:drawablePadding="5dp"
+                            android:elevation="10dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="School"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_blue_theme"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/card_txt_mbti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:elevation="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="I am an"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/card_txt_mbtitxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:elevation="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Your MBTI is displayed here."
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/card_txt_bio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:elevation="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="My Bio"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/card_txt_biotxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:elevation="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Your bio is displayed here."
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/card_txt_interests"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:elevation="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="My Interests"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/card_txt_intereststxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:elevation="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Your interests are displayed here."
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/card_img_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="400dp"
+                        android:maxHeight="750dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img" />
+
+                    <ImageView
+                        android:id="@+id/card_img_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="400dp"
+                        android:maxHeight="750dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_1" />
+
+                    <ImageView
+                        android:id="@+id/card_img_four"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="400dp"
+                        android:maxHeight="750dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_2" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

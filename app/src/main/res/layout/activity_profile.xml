@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_theme"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/profile_txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="@string/what_is_your_full_name"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/blue_theme"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/profile_txt_notchange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/you_won_t_be_able_to_change_this_later"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/profile_edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/rounded_button"
+            android:elevation="10dp"
+            android:hint="@string/ex_tony_stark"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="20sp"
+            tools:ignore="LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:id="@+id/profile_txt_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="@string/when_is_your_birthday"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/blue_theme"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/profile_txt_daymonthyear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/day_month_year"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/profile_edt_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_button"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:hint="@string/dd"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="2"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="20sp"
+                tools:ignore="LabelFor,TouchTargetSizeCheck"
+                tools:targetApi="lollipop" />
+
+            <EditText
+                android:id="@+id/profile_edt_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_button"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:hint="@string/mm"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="2"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="20sp"
+                tools:ignore="LabelFor,TouchTargetSizeCheck"
+                tools:targetApi="lollipop" />
+
+            <EditText
+                android:id="@+id/profile_edt_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_button"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:hint="@string/yyyy"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="4"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="20sp"
+                tools:ignore="LabelFor,TouchTargetSizeCheck"
+                tools:targetApi="lollipop" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/profile_txt_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text=""
+            android:textStyle="bold"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/profile_txt_personality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="What is your MBTI?"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/blue_theme"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/profile_txt_mbti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text=""
+            android:textStyle="bold"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/profile_btn_mbti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_button"
+            android:enabled="true"
+            android:fontFamily="@font/nunito_bold"
+            android:gravity="center"
+            android:text="Take a MBTI test"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/darker_blue"
+            tools:ignore="VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/profile_txt_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="@string/what_is_your_gender"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/blue_theme"
+            android:textSize="30sp" />
+
+
+        <RadioGroup
+            android:id="@+id/profile_rag_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/profile_rad_male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rounded_button"
+                android:elevation="10dp"
+                android:layoutDirection="rtl"
+                android:padding="10dp"
+                android:text="@string/male"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="LabelFor,VisualLintButtonSize"
+                tools:targetApi="lollipop" />
+
+            <RadioButton
+                android:id="@+id/profile_rad_female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rounded_button"
+                android:elevation="10dp"
+                android:layoutDirection="rtl"
+                android:padding="10dp"
+                android:text="@string/female"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="LabelFor,VisualLintButtonSize"
+                tools:targetApi="lollipop" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/profile_txt_preference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="@string/who_do_you_want_to_see"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/blue_theme"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/profile_txt_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/you_change_always_change_this_later"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:id="@+id/profile_rag_preference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/profile_rad_men"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rounded_button"
+                android:elevation="10dp"
+                android:layoutDirection="rtl"
+                android:padding="10dp"
+                android:text="@string/men"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="LabelFor,VisualLintButtonSize"
+                tools:targetApi="lollipop" />
+
+            <RadioButton
+                android:id="@+id/profile_rad_women"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rounded_button"
+                android:elevation="10dp"
+                android:layoutDirection="rtl"
+                android:padding="10dp"
+                android:text="@string/women"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="LabelFor,VisualLintButtonSize"
+                tools:targetApi="lollipop" />
+
+            <RadioButton
+                android:id="@+id/profile_rad_everyone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rounded_button"
+                android:elevation="10dp"
+                android:layoutDirection="rtl"
+                android:padding="10dp"
+                android:text="@string/everyone"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="LabelFor,VisualLintButtonSize"
+                tools:targetApi="lollipop" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/profile_txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="@string/what_is_your_email_address"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/blue_theme"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/profile_txt_recover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/we_will_use_this_to_recover_your_account_if_you_can_t_log_in"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/profile_edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_button"
+            android:elevation="10dp"
+            android:hint="@string/ex_tonystark_xyz_com"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="20sp"
+            tools:ignore="LabelFor,VisualLintTextFieldSize"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/profile_btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/circular_button"
+            android:enabled="true"
+            android:fontFamily="@font/nunito_bold"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/black"
+            tools:ignore="VisualLintButtonSize" />
+
+
+    </LinearLayout>
+
+</ScrollView>

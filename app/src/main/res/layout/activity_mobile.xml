@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MobileActivity">
+
+
+    <TextView
+        android:id="@+id/mobile_txt_whatphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/proxima_nova"
+        android:text="@string/what_is_your_phone_number"
+        android:textAlignment="center"
+        android:textColor="@color/blue_theme"
+        android:textColorHighlight="@color/blue_theme"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/mobile_txt_sendotp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/proxima_nova"
+        android:text="@string/send_otp"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textColorHighlight="@color/grey"
+        android:textSize="18sp"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/mobile_txt_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/proxima_nova"
+        android:text="@string/phone_number"
+        android:textAlignment="textStart"
+        android:textColor="@color/blue_theme"
+        android:textColorHighlight="#03A9F4"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/mobile_box_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:ccpDialog_backgroundColor="@color/blue_theme"
+            app:ccpDialog_fastScroller_handleColor="@color/teal_200"
+            app:ccpDialog_textColor="@color/white"
+            app:ccp_arrowColor="@color/blue_theme"
+            app:ccp_contentColor="@color/blue_theme" />
+
+        <EditText
+            android:id="@+id/mobile_edt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/square_button"
+            android:inputType="number"
+            android:maxLength="13"
+            android:padding="10dp"
+            android:textColor="@color/blue_theme"
+            android:textStyle="bold"
+            tools:ignore="LabelFor,VisualLintTextFieldSize,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mobile_btn_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/circular_button"
+        android:gravity="center"
+        android:text="@string/request_otp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/blue_theme"
+        tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+</LinearLayout>

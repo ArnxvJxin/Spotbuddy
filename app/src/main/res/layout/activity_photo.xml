@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_theme"
+    android:orientation="vertical"
+    tools:context=".PhotoActivity">
+
+    <TextView
+        android:id="@+id/photo_txt_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="@string/add_your_first_photo"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/blue_theme"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/photo_txt_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/choose_a_photo"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textSize="15sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/photo_box_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/rounded_button"
+        android:drawableStart="@drawable/baseline_photo_library_24"
+        android:drawableEnd="@drawable/baseline_add_24"
+        android:elevation="10dp"
+        android:padding="15dp"
+        android:text="Add a photo"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:backgroundTint="@color/white"
+        app:iconTint="@color/greyish_black"
+        tools:ignore="LabelFor,VisualLintButtonSize"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/photo_txt_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:visibility="invisible"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Add more photos to make your profile more attractive."
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/edit_ibt_one"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/white"
+            android:cropToPadding="true"
+            android:elevation="10dp"
+            android:padding="1dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            tools:ignore="LabelFor,VisualLintButtonSize,SpeakableTextPresentCheck"
+            tools:targetApi="lollipop" />
+
+        <ImageButton
+            android:id="@+id/edit_ibt_two"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            android:cropToPadding="true"
+            android:elevation="10dp"
+            android:padding="1dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            tools:ignore="LabelFor,VisualLintButtonSize,SpeakableTextPresentCheck"
+            tools:targetApi="lollipop" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/edit_ibt_three"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/white"
+            android:cropToPadding="true"
+            android:elevation="10dp"
+            android:padding="1dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            tools:ignore="LabelFor,VisualLintButtonSize,SpeakableTextPresentCheck"
+            tools:targetApi="lollipop" />
+
+        <ImageButton
+            android:id="@+id/edit_ibt_four"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            android:cropToPadding="true"
+            android:elevation="10dp"
+            android:padding="1dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            tools:ignore="LabelFor,VisualLintButtonSize,SpeakableTextPresentCheck"
+            tools:targetApi="lollipop" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/photo_btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/circular_button"
+        android:enabled="true"
+        android:fontFamily="@font/nunito_bold"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/black"
+        tools:ignore="VisualLintButtonSize,TouchTargetSizeCheck" />
+
+</LinearLayout>

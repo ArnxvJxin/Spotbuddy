@@ -1,0 +1,47 @@
+<resources>
+    <string-array name="age_range">
+        <item>18</item>
+        <item>60</item>
+    </string-array>
+    <string name="app_name">Spotbuddy</string>
+    <string name="cant_login_recover_account">Can\'t Login? Recover Account</string>
+    <string name="login_with_phone_number">Login with Phone Number</string>
+    <string name="back_arrow">Back Arrow</string>
+    <string name="what_is_your_phone_number">What is your Phone Number?</string>
+    <string name="send_otp">We will send an OTP to verify that you are real.</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="request_otp">Request OTP</string>
+    <string name="verify_your_phone_number">Verify Your Phone Number</string>
+    <string name="add_your_first_photo">Add your first photo</string>
+    <string name="choose_a_photo">Choose a photo of just you where you can clearly see your face.</string>
+    <string name="choose_from_camera_roll">Choose from camera roll</string>
+    <string name="click_a_photo">Click a photo</string>
+    <string name="next">Next</string>
+    <string name="what_is_your_full_name">What is your full name?</string>
+    <string name="you_won_t_be_able_to_change_this_later">You won\'t be able to change this later.</string>
+    <string name="ex_tony_stark">Ex. Tony Stark</string>
+    <string name="when_is_your_birthday">When is your birthday?</string>
+    <string name="day_month_year">Day Month Year</string>
+    <string name="dd">DD</string>
+    <string name="mm">MM</string>
+    <string name="yyyy">YYYY</string>
+    <string name="what_is_your_gender">What is your Gender?</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="who_do_you_want_to_see">Who do you want to see?</string>
+    <string name="you_change_always_change_this_later">You change always change this later.</string>
+    <string name="men">Men</string>
+    <string name="women">Women</string>
+    <string name="another">Another</string>
+    <string name="men_and_women_only">Men and Women only</string>
+    <string name="everyone">Everyone</string>
+    <string name="what_is_your_email_address">What is your email address?</string>
+    <string name="we_will_use_this_to_recover_your_account_if_you_can_t_log_in">We will use this to recover your account if you can\'t log in.</string>
+    <string name="ex_tonystark_xyz_com">Ex. tonystark@xyz.com</string>
+    <string name="where_are_you">Where are you?</string>
+    <string name="your_location_on">Your location services need to be turned on in order for this to work.</string>
+    <string name="enable_location">Enable Location</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

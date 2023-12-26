@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "24628751000",
+    "project_id": "spot-buddy-app",
+    "storage_bucket": "spot-buddy-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24628751000:android:519e53bf69f35f0f793eed",
+        "android_client_info": {
+          "package_name": "com.example.spotbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "24628751000-uho6mrerj5qud1vmobq35cgq4f39vqe7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.spotbuddy",
+            "certificate_hash": "f805941a8f69b55187c16996ddb98fb09535cfa9"
+          }
+        },
+        {
+          "client_id": "24628751000-f2aig122gbi1ildtu77nfj4rd46nvnuj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSC2dxD7w6ZUY7HOj6u5CPxHFVCcBpS0M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "24628751000-f2aig122gbi1ildtu77nfj4rd46nvnuj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

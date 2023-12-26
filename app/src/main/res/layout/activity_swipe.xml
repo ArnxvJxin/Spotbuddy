@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".SwipeActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.spotbuddy.ProfileFragment"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:layout_gravity="center_vertical"
+        tools:layout="@layout/fragment_profile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/swipe_btn_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center|clip_vertical|center_horizontal"
+            android:textColor="#000000"
+            app:backgroundTint="@color/white"
+            app:icon="@drawable/baseline_person_24"
+            app:iconGravity="textTop"
+            app:iconSize="30dp"
+            app:iconTint="#BBBBBB"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/swipe_btn_swipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center|clip_vertical|center_horizontal"
+            android:textColor="#000000"
+            app:backgroundTint="@color/white"
+            app:icon="@drawable/baseline_cards_24"
+            app:iconGravity="textTop"
+            app:iconSize="30dp"
+            app:iconTint="#BBBBBB"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/swipe_btn_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center|clip_vertical|center_horizontal"
+            android:textColor="#000000"
+            app:backgroundTint="@color/white"
+            app:icon="@drawable/baseline_chat_24"
+            app:iconGravity="textTop"
+            app:iconSize="30dp"
+            app:iconTint="#BBBBBB"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+</LinearLayout>

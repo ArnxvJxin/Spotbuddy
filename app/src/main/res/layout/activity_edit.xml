@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".EditActivity"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/edit_txt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@color/blue_theme"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/edit_txt_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="6"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="Edit"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/edit_txt_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Save"
+            android:textColor="@color/blue_theme"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dirty_white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/edit_txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Name"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/blue_theme"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:id="@+id/edit_txt_nametxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Name"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/edit_txt_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Date of Birth"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/blue_theme"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/edit_txt_birthdaytxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="DD/MM/YYYY (00 years)"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/edit_txt_mbti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="MBTI"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/blue_theme"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/edit_txt_mbtitxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="MBTI"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/edit_txt_bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Bio"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/blue_theme"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/edit_edt_bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_button"
+                android:elevation="10dp"
+                android:hint="About yourself..."
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                android:lines="1"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="20sp"
+                tools:ignore="LabelFor,VisualLintTextFieldSize,TouchTargetSizeCheck"
+                tools:targetApi="lollipop" />
+
+            <TextView
+                android:id="@+id/edit_txt_photos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Photos"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/blue_theme"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/dirty_white"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/edit_ibt_one"
+                    android:layout_width="170dp"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@color/white"
+                    android:cropToPadding="true"
+                    android:elevation="10dp"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    tools:ignore="LabelFor,VisualLintButtonSize,SpeakableTextPresentCheck"
+                    tools:targetApi="lollipop" />
+
+                <ImageButton
+                    android:id="@+id/edit_ibt_two"
+                    android:layout_width="170dp"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@color/white"
+                    android:cropToPadding="true"
+                    android:elevation="10dp"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    tools:ignore="LabelFor,VisualLintButtonSize,SpeakableTextPresentCheck"
+                    tools:targetApi="lollipop" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:background="@color/dirty_white"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/edit_ibt_three"
+                    android:layout_width="170dp"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@color/white"
+                    android:cropToPadding="true"
+                    android:elevation="10dp"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    tools:ignore="LabelFor,VisualLintButtonSize,SpeakableTextPresentCheck"
+                    tools:targetApi="lollipop" />
+
+                <ImageButton
+                    android:id="@+id/edit_ibt_four"
+                    android:layout_width="170dp"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@color/white"
+                    android:cropToPadding="true"
+                    android:elevation="10dp"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    tools:ignore="LabelFor,VisualLintButtonSize,SpeakableTextPresentCheck"
+                    tools:targetApi="lollipop" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/edit_txt_profession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Job/ Profession"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/blue_theme"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/edit_edt_profession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_button"
+                android:elevation="10dp"
+                android:hint="Job at Company Name..."
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress|textCapWords"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="20sp"
+                tools:ignore="LabelFor,VisualLintTextFieldSize"
+                tools:targetApi="lollipop" />
+
+            <TextView
+                android:id="@+id/edit_txt_college"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="College/University"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/blue_theme"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/edit_edt_college"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_button"
+                android:elevation="10dp"
+                android:hint="Institution, City..."
+                android:importantForAutofill="no"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="20sp"
+                tools:ignore="LabelFor,VisualLintTextFieldSize"
+                tools:targetApi="lollipop" />
+
+            <TextView
+                android:id="@+id/edit_txt_school"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="School"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/blue_theme"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/edit_edt_school"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_button"
+                android:elevation="10dp"
+                android:hint="School, City..."
+                android:importantForAutofill="no"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="20sp"
+                tools:ignore="LabelFor,VisualLintTextFieldSize"
+                tools:targetApi="lollipop" />
+
+            <TextView
+                android:id="@+id/edit_txt_interests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="My Interests"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/blue_theme"
+                android:textSize="30sp" />
+
+
+            <EditText
+                android:id="@+id/edit_edt_interests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_button"
+                android:elevation="10dp"
+                android:hint="Dancing, Basketball, Cars...."
+                android:importantForAutofill="no"
+                android:inputType="textCapWords"
+                android:lines="10"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="20sp"
+                tools:ignore="LabelFor,VisualLintTextFieldSize"
+                tools:targetApi="lollipop" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
